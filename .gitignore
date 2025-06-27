@@ -3,6 +3,8 @@
 
 ### Android ###
 # Gradle files
+.kotlin/
+
 .gradle/
 build/
 
