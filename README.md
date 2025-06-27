@@ -67,8 +67,7 @@ iosSimulatorArm64Main.dependsOn(iosMain)
 
 In this setup, iOS uses `androidx.compose.ui.viewinterop.UIKitView` to integrate native UIKit views
 within Compose.
-For Android and all other non-iOS platforms, `androidx.compose.material3.MaterialTheme` is used to
-implement views following the Material Design system.
+On Android and all other non-iOS platforms, Material Design views are used.
 
 ##### Implementation example
 
@@ -86,10 +85,8 @@ Also, be sure to add the source set name as a suffix to the file name, for examp
 
 #### Material and native SwiftUI views
 
-In this setup, iOS uses native SwiftUI views, while Android and all other non-iOS platforms  
-use `androidx.compose.material3.MaterialTheme` to implement views following the Material Design
-system.  
-For reference, I've used the video from Philipp
+In this setup, iOS uses native SwiftUI views, while Android and all other non-iOS platforms use Material Design views.
+For reference, I've used this video from Philipp
 Lackner: https://www.youtube.com/watch?v=F0BnN_uLp9A&ab_channel=PhilippLackner
 
 ##### Implementation example
