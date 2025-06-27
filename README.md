@@ -14,3 +14,8 @@ A small project to explore the capabilities of desktop applications using Compos
    `iosApp/iosApp.xcodeproj/project.xcworkspace`.
 6. Under **Execution target**, select an iOS simulator.
 7. Now the iOS configuration should be available in the run configurations dropdown.
+
+## Examples
+
+### ViewModel
+- [`composeApp/src/commonMain/kotlin/ch/ak/viewmodel/AppViewModel.kt`](https://github.com/Buttergipfeli/Compose_Multiplatform_UI_Exploring/blob/main/composeApp/src/commonMain/kotlin/ch/ak/viewmodel/AppViewModel.kt) is used in [`composeApp/src/commonMain/kotlin/ch/ak/App.kt`](https://github.com/Buttergipfeli/Compose_Multiplatform_UI_Exploring/blob/main/composeApp/src/commonMain/kotlin/ch/ak/App.kt).
