@@ -12,6 +12,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import ch.ak.view.platform.button.NativePlatformButton
 import ch.ak.view.platform.button.PlatformButton
 import ch.ak.viewmodel.AppViewModel
 import org.jetbrains.compose.resources.painterResource
@@ -39,6 +40,10 @@ fun App() {
             PlatformButton(
                 onClick = viewModel::toggleContentVisibility,
                 text = "Click me (platform button)!"
+            )
+            NativePlatformButton(
+                onClick = viewModel::toggleContentVisibility,
+                text = "Click me (native platform button)!"
             )
 
             AnimatedVisibility(isShowingContent) {
