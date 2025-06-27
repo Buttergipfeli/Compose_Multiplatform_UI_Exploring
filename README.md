@@ -1,6 +1,6 @@
 # Compose Multiplatform UI Exploring
 
-A small project to explore the capabilities of desktop applications using Compose Multiplatform.
+A small project to explore the capabilities of Compose Multiplatform.
 
 ## Installation
 
