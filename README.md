@@ -90,8 +90,6 @@ Lackner: https://www.youtube.com/watch?v=F0BnN_uLp9A&ab_channel=PhilippLackner
 
 ##### Implementation example
 
-### Steps to Create Platform-Specific Native Views
-
 1. Create an `expect fun` in `materialMain`, e.g.:  
    [
    `composeApp/src/commonMain/kotlin/ch/ak/view/platform/button/NativePlatformButton.kt`](https://github.com/Buttergipfeli/Compose_Multiplatform_UI_Exploring/blob/main/composeApp/src/commonMain/kotlin/ch/ak/view/platform/button/NativePlatformButton.kt)
