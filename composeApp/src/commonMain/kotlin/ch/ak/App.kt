@@ -12,6 +12,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import ch.ak.view.platform.button.PlatformButton
 import ch.ak.viewmodel.AppViewModel
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
@@ -35,6 +36,11 @@ fun App() {
             Button(onClick = viewModel::toggleContentVisibility) {
                 Text("Click me!")
             }
+            PlatformButton(
+                onClick = viewModel::toggleContentVisibility,
+                text = "Click me (platform button)!"
+            )
+
             AnimatedVisibility(isShowingContent) {
                 val greeting = remember { Greeting().greet() }
                 Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
