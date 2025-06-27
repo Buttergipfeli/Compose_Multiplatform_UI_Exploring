@@ -37,6 +37,8 @@ a shared source set (e.g., `materialMain`) in your [
 This setup allows Android and Desktop to share the same view logic in `materialMain`, while iOS uses
 its own source set (`iosMain`), both depending on `commonMain`.
 
+Note: I have currently tested the implementation only on Android and iOS, so the desktop version may not work as expected. 
+
 ```kotlin
 val commonMain by getting
 val desktopMain by getting
