@@ -33,7 +33,9 @@ To implement platform-specific logic, `expect` and `actual` declarations are use
 To avoid having to create a separate view for each platform individually (e.g., Android, Desktop),
 and instead share a single implementation across multiple platforms (excluding iOS), you can define
 a shared source set (e.g., `materialMain`) in your [
-`build.gradle.kts`](https://github.com/Buttergipfeli/Compose_Multiplatform_UI_Exploring/blob/main/composeApp/build.gradle.kts).  
+`build.gradle.kts`](https://github.com/Buttergipfeli/Compose_Multiplatform_UI_Exploring/blob/main/composeApp/build.gradle.kts) (
+You must also create the directory for the source set [
+`composeApp/src/materialMain`](https://github.com/Buttergipfeli/Compose_Multiplatform_UI_Exploring/tree/main/composeApp/src/materialMain)).  
 This setup allows Android and Desktop to share the same view logic in `materialMain`, while iOS uses
 its own source set (`iosMain`), both depending on `commonMain`.
 
@@ -85,7 +87,8 @@ Also, be sure to add the source set name as a suffix to the file name, for examp
 
 #### Material and native SwiftUI views
 
-In this setup, iOS uses native SwiftUI views, while Android and all other non-iOS platforms use Material Design views.
+In this setup, iOS uses native SwiftUI views, while Android and all other non-iOS platforms use
+Material Design views.
 For reference, I've used this video from Philipp
 Lackner: https://www.youtube.com/watch?v=F0BnN_uLp9A&ab_channel=PhilippLackner
 
